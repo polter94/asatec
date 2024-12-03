@@ -3,7 +3,7 @@ import logo from "/public/img/ASATEC-logo.png";
 import { Link } from "react-router-dom";
 import MenuHamburguesa from "../MenuHamburguesa/menuHamburguesa";
 
-con st Navbar = () => {
+const Navbar = () => {
   return (
     <div>
       <nav className="navbar">
