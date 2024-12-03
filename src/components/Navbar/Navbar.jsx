@@ -3,11 +3,10 @@ import logo from "/public/img/ASATEC-logo.png";
 import { Link } from "react-router-dom";
 import MenuHamburguesa from "../MenuHamburguesa/menuHamburguesa";
 
-const Navbar = () => {
+con st Navbar = () => {
   return (
     <div>
       <nav className="navbar">
-        <div className="div-innecesario">
           <div>
             <Link to='/'>
             <img src={logo} className="logo" alt="Logo de nuestro sitio" />
@@ -17,43 +16,37 @@ const Navbar = () => {
           <div>
             <ul className="nav-links">
 
-              <Link to="/categorias/shooter" className="nav-item">
-                {/* <a href="">Shooters</a> */}
+              <Link to="/pages/inicio" className="nav-item">
                 <p>Inicio</p>
               </Link>
 
-              <Link to="/categorias/aventura" className="nav-item">
-                {/* <a href="">Aventura</a> */}
+              <Link to="/pages/nosotros" className="nav-item">
                 <p>Nosotros</p>
               </Link>
 
-              <Link to="/categorias/carreras" className="nav-item">
-                {/* <a href="">Carreras</a> */}
+              <Link to="/pages/tecnicos" className="nav-item">
                 <p>Tecnicos</p>
               </Link>
 
-              <Link to="/categorias/carreras" className="nav-item">
-                {/* <a href="">Carreras</a> */}
+              <Link to="/pages/cursos" className="nav-item">
                 <p>Cursos</p>
               </Link>
 
-              <Link to="/categorias/carreras" className="nav-item">
-                {/* <a href="">Carreras</a> */}
+              <Link to="/pages/campusVirtual" className="nav-item">
                 <p>Campus Virtual</p>
               </Link>
               
-              <Link to="/categorias/carreras" className="nav-item">
-                {/* <a href="">Carreras</a> */}
+              <Link to="/pages/noticias" className="nav-item">
                 <p>Noticias</p>
               </Link>
 
             </ul>
           </div>
-        </div>
 
-        <div>
-          <MenuHamburguesa />
-        </div>
+          <div>
+            <MenuHamburguesa />
+          </div>
+
       </nav>
     </div>
   );
