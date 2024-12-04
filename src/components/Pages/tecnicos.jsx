@@ -1,4 +1,5 @@
 import React from 'react'
+import './tecnicos.css';
 
 const tecnicos = () => {
   return (
