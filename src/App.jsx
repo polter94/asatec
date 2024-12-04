@@ -1,26 +1,32 @@
 import Navbar from './components/Navbar/Navbar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import ItemdetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
-import { CartProvider } from './context/CartContext';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Nosotros from "./components/Pages/Nosotros";
+import Tecnicos from "./components/Pages/Tecnicos";
+import Cursos from "./components/Pages/Cursos";
+import CampusVirtual from "./components/Pages/CampusVirtual";
+import Noticias from "./components/Pages/Noticias";
+import Inicio from "./components/Pages/Inicio";
 
 function App() {
 
   return (
-    <BrowserRouter>
+    <Router>
 
-    <CartProvider>
-    <Navbar />
+      <Navbar />
 
-    <Routes>
-      <Route path="/" element={<ItemListContainer saludo="Saludos, esta en el inicio"/>} />
-      <Route path="/categorias/:idCategoria" element={ <ItemListContainer saludo={" se ingreso a la ruta: "}/> } />
-      {/* <Route path="/detalle/:id" element={ <ItemdetailContainer saludo={" se ingreso al detalle de un item"} /> } /> */}
-    </Routes>
-    </CartProvider>
+      <Routes>
+        <Route path='/' element={<Inicio />}/>
+        
+        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/tecnicos" element={<Tecnicos />} />
+        <Route path="/cursos" element={<Cursos />} />
+        <Route path="/campusVirtual" element={<CampusVirtual />} />
+        <Route path="/noticias" element={<Noticias />} />
+      </Routes>
 
-    </BrowserRouter>
+
+    </Router>
   )
 }
 

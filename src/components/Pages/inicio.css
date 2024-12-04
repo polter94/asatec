@@ -1,0 +1,9 @@
+.inicio-background{
+    display: flex;
+    height: 90vh;
+    /* background-image: "../public/img/inicio-background.png"; */
+    background-image: url(../../../public/img/inicio-background.jpg);
+
+    justify-content: center;
+    align-items: center;
+}

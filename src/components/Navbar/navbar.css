@@ -7,7 +7,7 @@
     height: 15vh;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #14213D;
+    /* background-color: #14213D; */
 
     padding: 10px;
 }
@@ -21,12 +21,20 @@
 .nav-links{
     list-style: none;
     display: flex;
+    
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: antiquewhite;
 }
 
 .nav-item{
     margin-right: 2rem;
     position: relative;
     text-align: center;
+
+    /* ESTILO: agrega linea superior e inferior a texto de boton */
+    /* ?? tal vez mover a nav-links ?? */
 }   
 
 .logo{
