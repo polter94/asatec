@@ -1,9 +1,29 @@
 .inicio-background{
     display: flex;
     height: 90vh;
-    /* background-image: "../public/img/inicio-background.png"; */
     background-image: url(../../../public/img/inicio-background.jpg);
 
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+
+    background-color: #c5e1fd;
+    width: min(600px, 75vw);
+    height: 400px;
+    
+}
+
+.text-box {
+    margin-top: 2rem;
+    width: 450px;
+    
 }

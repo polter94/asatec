@@ -12,10 +12,12 @@
     padding: 10px;
 }
 .navbar a{
-    color: #E5E5E5;
+    color: #cacaca;
+    text-decoration: none;
+    transition: color 0.4s ease; 
 }
 .navbar a:hover{
-    color: #ff7d01;
+    color: #474340;
 }
 
 .nav-links{
@@ -24,8 +26,9 @@
     
     border-top-style: solid;
     border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-color: antiquewhite;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-color: #cacaca;
 }
 
 .nav-item{
